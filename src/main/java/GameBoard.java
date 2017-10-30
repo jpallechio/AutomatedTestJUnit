@@ -1,6 +1,10 @@
 import java.util.ArrayList;
 
 public class GameBoard {
+
+    public GameBoard(){
+        addCell(new GoCell());
+    }
     ArrayList cells = new ArrayList();
 
     public void addCell(Cell cell){
@@ -9,5 +13,9 @@ public class GameBoard {
 
     public int getCellNumber(){
         return cells.size();
+    }
+
+    public Cell getCell(int index){
+        return (Cell)cells.get(index);
     }
 }

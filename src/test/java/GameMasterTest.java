@@ -1,7 +1,6 @@
-import static junit.framework.TestCase.assertNotNull;
-import static junit.framework.TestCase.assertSame;
+import junit.framework.TestCase;
 
-public class GameMasterTest {
+public class GameMasterTest extends TestCase {
     public void testSingleton() {
         GameMaster instance1 = GameMaster.instance();
         assertNotNull(instance1);

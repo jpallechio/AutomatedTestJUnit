@@ -1,5 +1,10 @@
 public class GameMaster {
+    static private GameMaster singleton;
+
     public static GameMaster instance(){
-        return null;
+        if(singleton == null){
+            singleton = new GameMaster();
+        }
+        return singleton;
     }
 }
